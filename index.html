@@ -5,36 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حسام بسيوني | Hossam Bassiouny</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
         body { background-color: #0f172a; color: #f8fafc; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px 12px; }
-        .card { background-color: #1e293b; max-width: 480px; width: 100%; padding: 32px 24px; border-radius: 24px; text-align: center; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4); border: 1px solid #334155; }
-        .avatar { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid #38bdf8; margin-bottom: 16px; box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3); }
-        h1 { font-size: 1.5rem; color: #ffffff; margin-bottom: 4px; font-weight: 700; }
-        .subtitle-en { font-size: 0.95rem; color: #94a3b8; margin-bottom: 14px; font-weight: 500; }
-        .title-badge { font-size: 0.85rem; color: #38bdf8; background-color: rgba(56, 189, 248, 0.1); padding: 10px 14px; border-radius: 14px; display: inline-block; margin-bottom: 22px; line-height: 1.5; font-weight: 600; border: 1px solid rgba(56, 189, 248, 0.2); }
+        .card { background-color: #1e293b; max-width: 480px; width: 100%; padding: 32px 20px; border-radius: 24px; text-align: center; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4); border: 1px solid #334155; }
         
+        /* الصورة الشخصية */
+        .avatar { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid #38bdf8; margin: 0 auto 16px auto; display: block; box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3); background-color: #334155; }
+        
+        /* أسماء وألقاب */
+        h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 4px; font-weight: 700; word-break: break-word; }
+        .subtitle-en { font-size: 1.05rem; color: #94a3b8; margin-bottom: 16px; font-weight: 500; }
+        .title-badge { font-size: 0.85rem; color: #38bdf8; background-color: rgba(56, 189, 248, 0.1); padding: 12px 14px; border-radius: 14px; display: block; margin-bottom: 22px; line-height: 1.6; font-weight: 600; border: 1px solid rgba(56, 189, 248, 0.2); }
+        
+        /* النبذة التعريفية */
         .bio-box { background-color: #0f172a; padding: 18px; border-radius: 16px; margin-bottom: 24px; text-align: right; border: 1px solid #334155; font-size: 0.88rem; line-height: 1.6; color: #cbd5e1; }
         .bio-box .lang-en { text-align: left; dir: ltr; margin-top: 12px; padding-top: 12px; border-top: 1px solid #334155; color: #94a3b8; font-size: 0.84rem; }
         
+        /* الأزرار */
         .links { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
-        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; background-color: #334155; color: #ffffff; text-decoration: none; padding: 14px 20px; border-radius: 14px; font-weight: 600; font-size: 0.95rem; transition: all 0.2s ease; border: 1px solid #475569; }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; background-color: #334155; color: #ffffff; text-decoration: none; padding: 14px 16px; border-radius: 14px; font-weight: 600; font-size: 0.95rem; transition: all 0.2s ease; border: 1px solid #475569; }
         .btn:hover { transform: translateY(-2px); opacity: 0.95; }
         
-        /* ألوان المنصات */
         .btn-linkedin { background-color: #0a66c2; border-color: #0a66c2; }
         .btn-whatsapp { background-color: #25d366; border-color: #25d366; color: #0f172a; }
         .btn-telegram { background-color: #229ed9; border-color: #229ed9; }
         .btn-facebook { background-color: #1877f2; border-color: #1877f2; }
+
+        /* فيديو يوتيوب */
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 14px; border: 1px solid #334155; margin-bottom: 10px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
         .footer-note { font-size: 0.75rem; color: #64748b; margin-top: 20px; }
     </style>
 </head>
 <body>
     <div class="card">
-        <!-- الصورة الشخصية -->
-        <img src="https://github.com/hossam-bassiouny.png" alt="Hossam Bassiouny" class="avatar">
+        <!-- صورة بروفايلك الصحيحة -->
+        <img src="https://github.com/hossambassiouny.png" alt="صورة حسام بسيوني" class="avatar">
         
-        <!-- الاسم بالعربي والإنجليزي -->
+        <!-- الاسم بالعربي والإنجليزي واضحين وبخط مناسب -->
         <h1>حسام بسيوني</h1>
         <div class="subtitle-en">Hossam Bassiouny</div>
         
@@ -47,14 +56,14 @@
         <!-- النبذة التعريفية -->
         <div class="bio-box">
             <div style="color: #38bdf8; font-weight: 700; margin-bottom: 6px;">💡 عن حسام بسيوني:</div>
-            استشاري في مجال التدريب والتطوير بخبرة تتجاوز 20 عاماً في القطاع المصرفي، الخدمات المالية، التأمين، والتدريب الاحترافي. متخصص في تطوير القيادات، المبيعات، خدمة العملاء، الالتزام، والتطوير المؤسسي، لتحويل الخبرات العملية إلى برامج تدريبية وتطبيقية تساهم في نمو الأفراد والمؤسسات.
+            استشاري في مجال التدريب والتطوير بخبرة تتجاوز 20 عاماً في القطاع المصرفي، الاستثمار، التأمين، التدريب الاحترافي وتنمية المهارات الشخصية. متخصص في تطوير القيادات، المبيعات، خدمة العملاء، الالتزام، والتطوير المؤسسي، لتحويل الخبرات العملية إلى برامج تدريبية وتطبيقية تساهم في نمو الأفراد والمؤسسات.
             
             <div class="lang-en" dir="ltr">
-                With more than 20 years of experience across banking, financial services, insurance, and professional training, Hossam Bassiouny combines extensive corporate experience with a practical and engaging approach to learning and development.
+                With more than 20 years of experience across banking, investment, financial services, insurance, and professional training, Hossam Bassiouny combines extensive corporate experience with a practical and engaging approach to learning and development.
             </div>
         </div>
         
-        <!-- أزرار التواصل الاجتماعي والمهني -->
+        <!-- أزرار التواصل -->
         <div class="links">
             <a href="https://www.linkedin.com/in/hossam-bassiouny" class="btn btn-linkedin" target="_blank">
                 💼 LinkedIn | حساب لينكد إن
@@ -73,10 +82,10 @@
             </a>
         </div>
 
-        <!-- قسم فيديو يوتيوب المباشر -->
-        <div style="color: #38bdf8; font-weight: 700; margin: 25px 0 10px; text-align: right;">🎥 فيديوهات:</div>
-        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 14px; border: 1px solid #334155; margin-bottom: 10px;">
-            <iframe src="https://www.youtube.com/embed/Uheuytq4rFI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
+        <!-- فيديو يوتيوب -->
+        <div style="color: #38bdf8; font-weight: 700; margin: 25px 0 10px; text-align: right; font-size: 0.9rem;">🎥 فيديوهات Videos:</div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/Uheuytq4rFI" allowfullscreen></iframe>
         </div>
 
         <div class="footer-note">Hossam Bassiouny &copy; Business & Advisory Card</div>

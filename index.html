@@ -165,13 +165,14 @@
 
         .content-panel {
             direction: ltr;
+            unicode-bidi: isolate;
             display: none;
             background-color: #0f172a;
             padding: 16px;
             border-radius: 16px;
             border: 1px solid #334155;
             margin: -2px 0 2px;
-            text-align: right;
+            text-align: left;
             font-size: 0.84rem;
             line-height: 1.8;
             color: #cbd5e1;
@@ -183,6 +184,8 @@
 
         /* Professional Credentials */
         .credential-item {
+            direction: ltr;
+            text-align: left;
             margin-bottom: 15px;
         }
 
@@ -269,6 +272,7 @@
 
         .portfolio-toggle {
             direction: ltr;
+            unicode-bidi: plaintext;
             width: 100%;
             background: transparent;
             border: 0;
@@ -603,7 +607,7 @@ As an L&amp;D Consultant, Learning Solutions Partner, and Certified Instructor, 
                     </button>
 
                     <div class="portfolio-details">
-                        <strong>Selected Training Courses</strong>
+                        <strong>Selected Training Topics</strong>
 
                         <ul>
                             <li>Communication Skills</li>
@@ -617,7 +621,7 @@ As an L&amp;D Consultant, Learning Solutions Partner, and Certified Instructor, 
 
                 <!-- Academic & Educational Engagements -->
                 <div class="portfolio-item">
-                    <button class="portfolio-toggle" type="button" onclick="togglePortfolio(this)">
+                    <button class="portfolio-toggle portfolio-toggle-ltr" type="button" onclick="togglePortfolio(this)" dir="ltr">
                         <span>🎓 Academic &amp; Educational Engagements</span>
                         <span>▼</span>
                     </button>
